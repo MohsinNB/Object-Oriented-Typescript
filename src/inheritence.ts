@@ -1,5 +1,5 @@
 {
-  class Student {
+  class Person {
     constructor(
       public name: string,
       public age: string,
@@ -9,19 +9,19 @@
       console.log(`Student name:${this.name} studied ${hours} hours daily`);
     }
   }
-  const Studentme = new Student("Mohsin", "20", "Diploma last year");
+  const Studentme = new Person("Mohsin", "20", "Diploma last year");
   Studentme.studyHour(8);
   console.log(Studentme.age);
 
   // First class
-  class student1 extends Student {
+  class student1 extends Person {
     constructor(name: string, age: string, semester: string) {
       super(name, age, semester);
     }
   }
 
   // Second class
-  class student2 extends Student {
+  class student2 extends Person {
     activities: string;
     constructor(
       name: string,
