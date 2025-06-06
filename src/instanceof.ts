@@ -7,10 +7,17 @@
       console.log("I am making Sound");
     }
   }
+  const isDog = (animal: Animal) => {
+    return animal instanceof dog;
+  };
+  const isCat = (animal: Animal) => {
+    return animal instanceof cat;
+  };
   const getAnimal = (animal: Animal) => {
-    if (animal instanceof dog) {
+    if (isDog(animal)) {
+      //animal instanceof dog
       animal.makeBark();
-    } else if (animal instanceof cat) {
+    } else if (isCat(animal)) {
       animal.makeMew();
     } else {
       animal.makeSound();
@@ -31,7 +38,7 @@
     }
 
     makeMew() {
-      console.log("I am mewing");
+      console.log(`I am ${this.name}`, "I am mewing");
     }
   }
 
