@@ -23,7 +23,7 @@
   const newAmount1 = poorAccount.addDeposit(2000);
   const newAmount2 = richAccount.addDeposit(2000);
 
-  const newAmount3 = poorAccount.getBalance(500);
+  const newAmount3 = poorAccount.getBalance();
   //   console.log(poorAccount.name);
   //   console.log(richAccount.name);
   //   console.log(newAmount1, newAmount2);
